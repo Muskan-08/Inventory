@@ -1,46 +1,64 @@
-# Getting Started with Create React App
+# Inventory Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple inventory management web app where you can check list of all product and can manage the product available in the inventory like editing the price and quantity deleting the product and disabling the product.
+This app will have two view admin and user which can be switch from navigation bar using switch button 
+- Admin
+admin can edit, delete, disable the product
+- User
+user can only view the product
+actions buttons will be hidden.
 
-## Available Scripts
+## Approach
 
-In the project directory, you can run:
+Considering  Modularity and Encapsulation, project has been modularized into three layers -
+1. View -> The main layouts.
+2. Modules -> The individual modules needed to build a layout.
+3. Components -> The individual units/components needed to build a module.
 
-### `npm start`
+Considering  Extensibility, project has been implemented using Redux to make flexible use of states and reducer throughout the project withour prop drilling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Considering Readability, project code has been formatted with appropriate naming conventions and indentations.
+The data and configurations has been seperated out for more clear and readable code.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+API services has been seperated out in a Service folder.
 
-### `npm test`
+Since it's a standalone app, One view has been created and it's modules has been rendered based on Admin/User.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Local Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pre-Requisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install VS Code Edition .
 
-### `npm run eject`
+    For Windows - (https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&passive=false&cid=2030).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    For Mac - (https://visualstudio.microsoft.com/thank-you-downloading-visual-studio-mac/?sku=communitymac&rel=17).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install Node & Install a Package Manager - npm/yarn. (https://nodejs.org/de/blog/release/v14.17.1/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Running The APP
 
-## Learn More
+    npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm run start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Generating The Build
+
+    npm run build
+
+## Folder Structure
+
+App -> View -> Modules -> Components
+
+## Built With
+
+- React JS.
+- Typescript.
+- Redux.
+- Styled-components.
+- Antd design.
+
