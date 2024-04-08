@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import { Card, Col, Row, Statistic } from 'antd';
 import { getStatsColumn } from './config';
 import CardBox from '../../components/card';
