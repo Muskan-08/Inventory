@@ -1,0 +1,1 @@
+export const LIST_URL = "https://dev-0tf0hinghgjl39z.api.raw-labs.com/inventory";
